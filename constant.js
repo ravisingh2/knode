@@ -1,0 +1,1 @@
+exports.var = {"activation_url":"http://localhost/hireapplicants/application/index/activate?code="}

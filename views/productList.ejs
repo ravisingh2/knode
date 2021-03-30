@@ -1,0 +1,43 @@
+<div class="left-aside">
+    <ol class="breadcrumb">
+        <li><i class="fa fa-home home-icon"></i></li>
+        <li class="active">Product-Listing</li>
+    </ol>
+    <div class="category kkk">
+        <h4 class="shop">Shop By</h4>
+        <h5>Categories</h5>
+        <ul class="cat">
+            <li><input type="checkbox"><span class="cat-name">Brass</span><span class="number">12</span></li>
+            <li><input type="checkbox"><span class="cat-name">Handmade Bags</span><span class="number">12</span></li>
+            <li><input type="checkbox"><span class="cat-name">Statues</span><span class="number">12</span></li>
+            <li><input type="checkbox"><span class="cat-name">Sculptures</span><span class="number">12</span></li>
+            <li><input type="checkbox"><span class="cat-name">Photo Frames</span><span class="number">12</span></li>
+        </ul>
+        <h4 class="shop">Price</h4>
+        <img src="images/filter.jpg" height="76" width="235" alt="">
+    </div>
+    <div class="deals"><img src="images/deals.jpg" alt="" class="img-responsive"></div>
+</div>
+<div class="right-aside">
+    <% for(var i=0;i<data.length;i++){%>
+        <div class="pro-listing">
+            <div class="item1">
+                <div class="product-thumb">
+                    <div class="pro-img">
+                        <img src="images/pro1.jpg" alt="">
+                    </div>	
+                    <div class="butns">
+                        <a href="" class="view view1">View</a>
+                        <a href="" class="view view1">Buy Now</a>
+                    </div>
+                </div>
+            <div class="des-title">
+                <%= data[i].name %>
+            </div>
+            <div class="rate">
+                <span class="fa fa-inr rupee"></span><%= data[i].price%>
+            </div>
+        </div>
+    <%}%>
+
+</div>

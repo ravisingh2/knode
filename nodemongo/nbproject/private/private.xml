@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/wamp/www/nodemysql/views/register.ejs</file>
+            <file>file:/D:/wamp/www/nodemysql/db/db.js</file>
+            <file>file:/D:/wamp/www/nodemysql/index.js</file>
+            <file>file:/D:/wamp/www/nodemysql/library/userlib.js</file>
+            <file>file:/D:/wamp/www/nodemysql/views/partial/header.ejs</file>
+            <file>file:/D:/wamp/www/nodemysql/model/usermodel.js</file>
+            <file>file:/D:/wamp/www/nodemysql/views/login.ejs</file>
+            <file>file:/D:/wamp/www/nodemysql/router.js</file>
+            <file>file:/D:/wamp/www/nodemysql/views/index.ejs</file>
+            <file>file:/D:/wamp/www/nodemysql/entity/user.js</file>
+        </group>
+    </open-files>
+</project-private>

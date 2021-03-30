@@ -1,0 +1,20 @@
+function
+select user_master.password as wallet_key, `user_master`.`id`, `user_master`.`first_name`, `user_master`.`username`, `user_master`.`email`, `user_master`.`password`, `user_master`.`phone_number` from user_master Where user_master.status=1 AND user_master.username='raviducddat@gmail.com'  AND  user_master.password='202cb962ac59075b964b07152d234b70'
+[ { wallet_key: '202cb962ac59075b964b07152d234b70',
+    id: 1,
+    first_name: 'ravi',
+    username: 'raviducddat@gmail.com',
+    email: 'raviducddat@gmail.com',
+    password: '202cb962ac59075b964b07152d234b70',
+    phone_number: '8130450522' } ]
+select `urm`.`user_id`, `urm`.`role_id` from user_role_mapping urm LEFT JOIN role_master rm ON urm.role_id=rm.id where urm.user_id IN(1)
+function
+select user_master.password as wallet_key, `user_master`.`id`, `user_master`.`first_name`, `user_master`.`username`, `user_master`.`email`, `user_master`.`password`, `user_master`.`phone_number` from user_master Where user_master.status=1 AND user_master.username='raviducddat@gmail.com'  AND  user_master.password='202cb962ac59075b964b07152d234b70'
+[ { wallet_key: '202cb962ac59075b964b07152d234b70',
+    id: 1,
+    first_name: 'ravi',
+    username: 'raviducddat@gmail.com',
+    email: 'raviducddat@gmail.com',
+    password: '202cb962ac59075b964b07152d234b70',
+    phone_number: '8130450522' } ]
+select `urm`.`user_id`, `urm`.`role_id` from user_role_mapping urm LEFT JOIN role_master rm ON urm.role_id=rm.id where urm.user_id IN(1)

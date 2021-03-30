@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mohan Jodero</title>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<!-- top bar start -->
+	<div class="fluid main-border">
+		<div class="container">
+			<ul class="top-bar">
+				<li><a href="#"><span class="fa fa-user space"></span>My Account</a></li>
+				<li><a href="#"><span class="fa fa-heart space"></span>My Wishlist</a></li>
+                                <% if(session != undefined && session[0] != undefined && session[0].email !=undefined){%>
+                                    <li><a href="/login"><span class="fa fa-key space"></span>Logout</a></li>
+                                <% } else{%>    
+                                    <li><a href="/login"><span class="fa fa-key space"></span>Login</a></li>
+                                <%}%>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="fluid">
+		<div class="container">
+			<div class="logo"><img src="/images/logo.png" height="80" width="249" alt=""></div>
+			<div class="gift-bar">
+				<div class="shipping">
+					<div class="truck">
+						<div class="truck-icon">
+						<span class="fa fa-bus icon-color"></span>
+						</div>
+					</div>
+					<div class="des">
+						<h5>Free Shipping Across india</h5>
+						<p>On order over Rs. 500</p>
+					</div>	
+				</div>
+			</div>
+			<div class="gift-bar">
+				<div class="shipping">
+					<div class="truck">
+						<div class="truck-icon">
+						<span class="fa fa-cloud-upload icon-color"></span>
+						</div>
+					</div>
+					<div class="des">
+						<h5>Up to 20% off on Scuptures</h5>
+						<p>On order over Rs. 500</p>
+					</div>	
+				</div>
+			</div>
+			<div class="gift-bar">
+				<div class="shipping">
+					<div class="truck">
+						<div class="truck-icon">
+						<span class="fa fa-gift icon-color"></span>
+						</div>
+					</div>
+					<div class="des">
+						<h5>Gift hampers</h5>
+						<p>On order over Rs. 500</p>
+					</div>	
+				</div>
+			</div>
+
+		</div>
+		<div class="banner">
+			<div class="container">
+				<div class="menu-bar">
+				<nav class="navbar navbar-default" role="navigation">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+				
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="/">Home</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Our Vision</a></li>
+							<li><a href="/productList">Products</a></li>
+							<li><a href="#">Contact  Us</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="search"><span class="fa fa-search search-space"></span>|</li>
+							<li>
+                                                            <a href="#">
+                                                                <span class="fa fa-shopping-cart">
+                                                                </span>&nbsp;&nbsp;
+                                                                <% if(data['item']!= undefined){%>
+                                                                    
+                                                                <%}else{%>
+
+                                                                <%}%>
+                                                            </a>
+                                                        </li>
+							
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</nav>
+				</div>	
+			</div>
+		</div>
